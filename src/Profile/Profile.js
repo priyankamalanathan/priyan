@@ -13,7 +13,7 @@ import resume from "./RESUME MINE.pdf";
 const Home = () => {
   return (
     <div className="content">
-      <div className="text-section" style={{marginLeft:"150px"}}>
+      <div className="text-section">
         <h1>HELLO, I'M <span>PRIYAN</span></h1>
         <h2>Front End Developer</h2>
         <p> 
@@ -34,7 +34,7 @@ const Home = () => {
               <img src={image4} alt="GitHub" />
             </a>
           </div>
-          <a href={resume} download className="resume-btn" style={{marginLeft:"180px"}}>Resume ↓</a>
+          <a href={resume} download className="resume-btn">Resume ↓</a>
         </div>
       </div>
       <div className="image-section">

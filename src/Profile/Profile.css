@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   overflow-x: hidden;
   font-family: sans-serif;
@@ -101,15 +102,14 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 60px 100px;
   gap: 40px;
   min-height: calc(100vh - 120px);
+  padding: 60px 100px; /* default (desktop) */
 }
 
 /* Text section */
 .text-section {
   flex: 1;
-  max-width: 550px;
   text-align: left;
 }
 
@@ -149,6 +149,7 @@ body {
   display: flex;
   gap: 15px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .social-icons img {
@@ -189,14 +190,18 @@ body {
   max-width: 420px;
   max-height: 420px;
   width: 100%;
+  height: auto;
   border-radius: 25px;
   object-fit: cover;
 }
 
-/* Mobile */
+/* ─── Mobile ──────────────────────────────────────────── */
 @media (max-width: 768px) {
   .navbar {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding: 15px 20px;
   }
 
@@ -223,35 +228,53 @@ body {
     display: flex;
   }
 
+ 
   .content {
     flex-direction: column;
     padding: 30px 20px;
     text-align: center;
     align-items: center;
     min-height: unset;
+    gap: 24px;
+    width: 100%;
+    overflow-x: hidden;
   }
 
   .text-section {
     text-align: center;
     max-width: 100%;
+    width: 100%;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    padding: 0 5px;
+  }
+
+  .text-section h1 {
+    font-size: 28px;
+  }
+
+  .text-section h2 {
+    font-size: 18px;
   }
 
   .social-resume {
     justify-content: center;
+    flex-direction: row; /* keep row but wrap */
   }
 
   .image-section {
     justify-content: center;
     width: 100%;
+    order: -1;
   }
 
   .image-section img {
-    max-width: 280px;
-    max-height: 280px;
+    max-width: 260px; 
+    max-height: 260px;
   }
 }
 
-/* Tablet */
+/* ─── Tablet ──────────────────────────────────────────── */
 @media (min-width: 769px) and (max-width: 1024px) {
   .navbar {
     padding: 20px 30px;
@@ -277,6 +300,7 @@ body {
   .text-section {
     text-align: center;
     max-width: 100%;
+    width: 100%;
   }
 
   .social-resume {
@@ -293,7 +317,7 @@ body {
   }
 }
 
-/* Desktop */
+/* ─── Desktop ─────────────────────────────────────────── */
 @media (min-width: 1025px) {
   .navbar {
     padding: 25px 60px;
@@ -312,6 +336,7 @@ body {
 
   .text-section {
     text-align: left;
+    max-width: 550px;
   }
 
   .social-resume {

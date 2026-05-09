@@ -62,7 +62,7 @@ const Contact = () => {
 
         <div style={itemStyle}>
           <span style={iconStyle}>📧</span>
-          <span>Email: <a href="mailto:youremail@gmail.com" style={linkStyle}>priyankavin00@gmail.com</a></span>
+          <span>Email: <a href="priyankavin00@gmail.com" style={linkStyle}>PING ME</a></span>
         </div>
 
         <div style={itemStyle}>
@@ -72,17 +72,17 @@ const Contact = () => {
 
         <div style={itemStyle}>
           <span style={iconStyle}>📸</span>
-          <span>Instagram: <a href="https://www.instagram.com/__p_r_i_y_a_n__16/?next=%2F" style={linkStyle}>your instagram</a></span>
+          <span>Instagram: <a href="https://www.instagram.com/__p_r_i_y_a_n__16/?next=%2F" style={linkStyle}>CLICK</a></span>
         </div>
 
         <div style={itemStyle}>
           <span style={iconStyle}>💼</span>
-          <span>LinkedIn: <a href="https://www.linkedin.com/in/priyan-kamalanathan-3994a1290/" style={linkStyle}>your linkedin</a></span>
+          <span>LinkedIn: <a href="https://www.linkedin.com/in/priyan-kamalanathan-3994a1290/" style={linkStyle}>CLICK</a></span>
         </div>
 
         <div style={itemStyle}>
           <span style={iconStyle}>🐙</span>
-          <span>GitHub: <a href="https://github.com/priyankamalanathan" style={linkStyle}>your github</a></span>
+          <span>GitHub: <a href="https://github.com/priyankamalanathan" style={linkStyle}>CLICK</a></span>
         </div>
 
       </div>
